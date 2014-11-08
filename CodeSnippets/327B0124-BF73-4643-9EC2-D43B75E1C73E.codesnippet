@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>transformRotationZ</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(void)transformRotationZ{
+    CABasicAnimation* rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 ];
+    rotationAnimation.duration = &lt;#duration#&gt;;
+    rotationAnimation.cumulative = YES;
+    rotationAnimation.repeatCount = &lt;#repeat#&gt;;
+    
+    [&lt;#view#&gt;.layer addAnimation:rotationAnimation forKey:&lt;#key#&gt;];
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>327B0124-BF73-4643-9EC2-D43B75E1C73E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>transform.rotation.z</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>transformRotationZ</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

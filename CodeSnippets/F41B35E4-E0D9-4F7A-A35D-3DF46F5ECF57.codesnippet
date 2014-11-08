@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>rotationAnimation</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)rotationAnimation
+{
+    CGAffineTransform endAngle = CGAffineTransformMakeRotation(&lt;#angle#&gt; * (M_PI / 180.0f));
+    
+    [UIView animateWithDuration:0.01 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+        &lt;#view#&gt;.transform = endAngle;
+    } completion:^(BOOL finished) {
+        &lt;#angle#&gt; += 10;
+        [self rotationAnimation];
+    }];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F41B35E4-E0D9-4F7A-A35D-3DF46F5ECF57</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>rotationAnimation</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>rotationAnimation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
